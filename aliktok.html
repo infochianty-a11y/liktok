@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chanty Shirokane | Jungle Party Links</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Zen+Old+Mincho:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+    /* --- リセット & ベース設定 --- */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+        /* 背景画像設定：image_0.png を使用 */
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+                    url('gorilla2.png') no-repeat center center / cover;
+        
+        color: #fff;
+        font-family: 'Zen Old Mincho', serif;
+        line-height: 1.6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-attachment: fixed; 
+    }
+
+    /* --- モバイル用コンテナ --- */
+    .container {
+        width: 90%;
+        max-width: 420px;
+        text-align: center;
+        background: transparent; 
+        padding: 40px 0;
+    }
+
+    /* --- ヘッダーエリア --- */
+    .profile-area {
+        margin-bottom: 50px;
+        animation: fadeIn 1.5s ease;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.7);
+    }
+
+    .profile-img {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid rgba(255, 255, 255, 0.8);
+        margin-bottom: 20px;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    }
+
+    h1 {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 32px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-bottom: 5px;
+        color: #fff;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+
+    .sub-title {
+        font-size: 13px;
+        color: #ddd;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    /* --- リンクボタンエリア --- */
+    .links {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* ▼▼▼ ボタンのデザイン（ネオン風） ▼▼▼ */
+    .link-btn {
+        display: block;
+        text-decoration: none;
+        
+        /* ベースの色：少し青みがかった半透明ブラック */
+        background: rgba(10, 20, 40, 0.6); 
+        
+        /* 枠線：青白いネオン光 */
+        border: 2px solid rgba(100, 220, 255, 0.8);
+        
+        color: #fff;
+        padding: 22px 20px;
+        border-radius: 12px;
+        transition: all 0.3s ease;
+        backdrop-filter: blur(8px);
+        
+        /* ネオンの発光効果 */
+        box-shadow: 0 0 15px rgba(100, 220, 255, 0.5), inset 0 0 15px rgba(100, 220, 255, 0.2);
+        
+        opacity: 0; 
+        transform: translateY(30px);
+        animation: slideUp 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+    }
+
+    /* アニメーションの遅延設定 */
+    .link-btn:nth-child(1) { animation-delay: 0.2s; }
+    .link-btn:nth-child(2) { animation-delay: 0.3s; }
+    .link-btn:nth-child(3) { animation-delay: 0.4s; }
+    .link-btn:nth-child(4) { animation-delay: 0.5s; }
+    .link-btn:nth-child(5) { animation-delay: 0.6s; }
+
+    /* ホバー時の挙動（ゴールドに変化） */
+    .link-btn:hover {
+        background: rgba(100, 220, 255, 0.15);
+        border-color: #ffd700; 
+        transform: translateY(-3px) scale(1.02);
+        box-shadow: 0 0 30px rgba(255, 200, 0, 0.8), inset 0 0 20px rgba(255, 200, 0, 0.4);
+        text-shadow: 0 0 8px rgba(255, 255, 255, 0.9);
+    }
+
+    .btn-en {
+        display: block;
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 22px; 
+        font-weight: 600;
+        margin-bottom: 4px;
+        letter-spacing: 1px;
+    }
+
+    .btn-jp {
+        display: block;
+        font-size: 14px; 
+        color: #e0e0e0; 
+        font-weight: 700;
+        letter-spacing: 0.5px; 
+        opacity: 0.9;
+    }
+
+    /* --- フッター --- */
+    footer {
+        margin-top: 60px;
+        font-size: 11px;
+        color: #ccc;
+        text-shadow: 0 1px 5px rgba(0,0,0,0.8);
+        animation: fadeIn 2s ease;
+    }
+
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes slideUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="profile-area">
+            <img src="profile.JPG" alt="Profile" class="profile-img">
+            <h1>Chanty Shirokane</h1>
+            <p class="sub-title">Vibes & Luxury Salon</p>
+        </header>
+
+        <div class="links">
+            <a href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000500729" class="link-btn">
+                <span class="btn-en">Esthetic Chianty</span>
+                <span class="btn-jp">エステのご予約</span>
+            </a>
+            
+            <a href="https://privatesalonchianty.vercel.app/" class="link-btn">
+                <span class="btn-en">Chianty HP</span>
+                <span class="btn-jp">シャンティ 公式サイト</span>
+            </a>
+            
+            <a href="https://chiantycreative.vercel.app/" class="link-btn">
+                <span class="btn-en">Chianty Creative</span>
+                <span class="btn-jp">ホームページ制作依頼</span>
+            </a>
+            
+            <a href="mailto:info.chianty@gmail.com" class="link-btn">
+                <span class="btn-en">E-mail</span>
+                <span class="btn-jp">メールでのお問い合わせ</span>
+            </a>
+
+            <a href="https://line.me/ti/p/JiM-zppnd_" class="link-btn">
+                <span class="btn-en">Official LINE</span>
+                <span class="btn-jp">LINEで連絡・相談する</span>
+            </a>
+        </div>
+
+        <footer>
+            &copy; 2025 Chianty Vibes. All rights reserved.
+        </footer>
+    </div>
+
+</body>
+</html>
